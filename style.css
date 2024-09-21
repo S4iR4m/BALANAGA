@@ -1,0 +1,697 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #ffffff;
+    color: #0514fc; /* Updated color */
+}
+
+/* General Header Styles */
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for separation */
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the header spans the full width */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Container for header content */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Styles */
+.logo img {
+    width: 1.5cm; /* Adjust width as needed */
+    height: auto; /* Keep aspect ratio */
+}
+
+/* Navigation Styles */
+.header-nav {
+    text-align: right;
+}
+
+.header-nav .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+}
+
+.header-nav .nav-menu li {
+    display: inline;
+}
+
+.header-nav .nav-menu a {
+    color: #333; /* Updated color */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-nav .nav-menu a:hover {
+    color: #0411db; /* Slightly darker shade on hover */
+}
+
+/* Style for the navigation bar */
+.navbar {
+    background-color: #ffffff; /* Background color */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and nav menu */
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Aligns it to the top */
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Keeps it above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for separation */
+}
+/* Style for the logo container */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the logo image */
+.logo img {
+    width: 1cm; /* Set logo width */
+    height: 1cm; /* Set logo height for a perfect circle */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the circle without distortion */
+}
+
+/* Style for the navigation menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 1em; /* Space between menu items */
+}
+
+/* Style for each navigation menu item */
+.nav-menu li {
+    margin-left: 20px; /* Space between each menu item */
+}
+
+/* Style for the links inside the menu */
+.nav-menu a {
+    color: #0514fc; /* Updated color */
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 10px;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    justify-content: flex-end;
+}
+
+/* Hover effect for the links */
+.nav-menu a:hover {
+    color: #0411db; /* Slightly darker shade on hover */
+}
+
+/* Home Section */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #D6F0F5 0%, white 70%);
+    /* Light blue (#87CEFA) at the top, fading to white */
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    justify-content: left;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.intro-text {
+    flex: 2;
+    margin-left: 30px;
+}
+
+h1 {
+    text-align: left;
+    font-size: 3rem;
+    color: #1c4128; /* Updated color */
+}
+p{
+    text-align: left;
+    color: #333;
+}
+.socials a {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #0514fc; /* Updated color */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Centering buttons in the Home section */
+.socials {
+    display: flex;
+    justify-content: left;
+    gap: 10px; /* Space between the buttons */
+}
+
+/* Centering content in the Resume section */
+.container {
+    text-align: center;
+}
+/* General Button Style for Education and Experience */
+.button-34 {
+    background: #ffffff; /* Button color */
+    border-radius: 999px;
+    box-shadow: #0514fc 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #333;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-34:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: #1c4128; /* Darker shade on hover */
+    color: #ffffff;
+}
+
+/* About Section */
+#about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0514fc; /* Updated color */
+}
+/* Resume Section */
+#resume {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+#resume .container {
+    text-align: center;
+}
+
+#resume h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#resume p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0514fc; /* Updated color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #0411db; /* Slightly darker shade on hover */
+}
+/* Education Section */
+#education {
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.education-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.education-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.edu-item {
+    position: relative;
+}
+
+.edu-item h3 {
+    justify-content: left;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.edu-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.edu-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.edu-dates {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+/* Container for education items */
+.education-box {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the ends of the container */
+    margin-bottom: 20px; /* Adds space between items */
+    border-bottom: 1px solid #ddd; /* Optional: adds a separator line */
+    padding-bottom: 10px; /* Adds space below each item */
+}
+
+/* Content section (left side) */
+.edu-content {
+    flex: 1; /* Takes up available space */
+}
+
+/* Dates section (right side) */
+.edu-dates {
+    font-style: italic;
+    color: #666; /* Adjust color as needed */
+}
+
+/* Experience Section */
+#experience {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+#experience h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.experience-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.experience-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item {
+    position: relative;
+}
+/* Style for Dates in Education and Experience Sections */
+.edu-dates, .exp-dates {
+    font-style: italic;
+    color: #666; /* You can adjust the color as needed */
+}
+
+
+.experience-item h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.experience-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    font-size: 1rem;
+    color: #666;
+}
+/* Container for experience items */
+.experience-box {
+    display: flex;
+    justify-content: space-between; /* Aligns items to the ends of the container */
+    margin-bottom: 20px; /* Adds space between items */
+    border-bottom: 1px solid #ddd; /* Optional: adds a separator line */
+    padding-bottom: 10px; /* Adds space below each item */
+}
+
+/* Content section (left side) */
+.exp-content {
+    flex: 1; /* Takes up available space */
+}
+
+/* Dates section (right side) */
+.exp-dates {
+    font-style: italic;
+    color: #666; /* Adjust color as needed */
+}
+
+.experience-dates {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+/* Box and hover effect for skills section */
+.skill-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+.skill-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Skills section general styling */
+#skills {
+    padding: 50px 0;
+    text-align: left;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0514fc; /* Updated color */
+}
+
+.services-container {
+    display: flex;
+    gap: 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-icon img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #343a40;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #6c757d;
+    font-size: 1em;
+  }
+/* General Section Styling */
+#projects {
+    padding: 50px 0;
+    text-align: left;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0514fc; /* Updated color */
+}
+
+/* Center content and apply box with hover effect for Projects */
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Project links styling */
+.project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0514fc;
+    font-weight: 500;
+    border: 1px solid #0514fc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.project-dates{
+        font-style: italic;
+        color: #666; /* You can adjust the color as needed */
+}
+.project-dates{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.project-item a:hover {
+    background-color: #0514fc;
+    color: #fff;
+}
+/* Center content and apply box with hover effect for Certificates */
+.certificate-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.certificate-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Certificate list styling */
+.certificate-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.certificate-item li {
+    color: #333;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #53925a;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect on individual certificates */
+.certificate-item li:hover {
+    background-color: #53925a;
+    color: #fff;
+}
+
+/* Footer Styles */
+/* General Footer Styles */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Container for footer content */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer Icons */
+.footer-icons {
+    display: flex;
+    gap: 1em;
+}
+
+.footer-icons a {
+    color: #ffffff; /* Updated color */
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #0514fc; /* Slightly darker shade on hover */
+}
+
+/* Footer Navigation */
+.footer-nav {
+    text-align: right;
+}
+
+.footer-nav .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+}
+
+.footer-nav .nav-menu li {
+    display: inline;
+}
+
+.footer-nav .nav-menu a {
+    color: #ffffff; /* Updated color */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-nav .nav-menu a:hover {
+    color: #ffffff; /* Slightly darker shade on hover */
+}
