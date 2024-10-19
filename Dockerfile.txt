@@ -1,0 +1,17 @@
+# Use Nginx as the base image
+FROM nginx:alpine
+
+# Set the working directory
+WORKDIR /usr/share/nginx/html
+
+# Remove the default Nginx static files
+RUN rm -rf ./*
+
+# Copy the static website files from the local repository to the container
+COPY ./index.html ./style.css ./script.js .
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx when the container runs
+CMD ["nginx", "-g", "daemon off;"]
